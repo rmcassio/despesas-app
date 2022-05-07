@@ -1,7 +1,5 @@
 // ignore_for_file: prefer_const_constructors, avoid_print, deprecated_member_use
 
-import 'dart:ui';
-
 import './components/transaction_form.dart';
 import './components/transaction_list.dart';
 import '/models/transaction.dart';
@@ -10,7 +8,6 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 import 'components/chart.dart';
-import 'components/chart_bar.dart';
 
 main() => runApp(ExpensesApp());
 
@@ -69,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
       id: Random().nextDouble().toString(),
       title: title,
       value: value,
-      date: DateTime.now(),
+      date: date,
     );
 
     setState(() {
